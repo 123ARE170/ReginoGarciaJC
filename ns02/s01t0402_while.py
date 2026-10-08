@@ -10,7 +10,8 @@ import time
 
 #crear varibales 
 #el problema 
-n = 100
+n = 5000
+limit = 500
 the_sum = 0 
 
 # timepo el t1
@@ -18,7 +19,7 @@ timestamp_01 = time.time()
 
 # iniciando la suma 
 #100 
-while(n > 0 ): 
+while(n > limit ): 
     the_sum = the_sum + n  #100 + 99 + 98 ... +1 
     n = n -1 
 
