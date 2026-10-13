@@ -26,8 +26,14 @@ print(len(my_array))
 #         print(f"Elemento Num {i+1}:{my_array[i]}")
         
 #busqueda de elementos
-num_to_search = 42
+num_to_search = 82
+my_array[7]= 42
 try: 
+
     print(f"Locatizadom {num_to_search}: {my_array.index (num_to_search)}")
 except: 
     print("NUMERO NO ENCONTRADO WUE")
+try: 
+    my_array[34] = 82 
+except: 
+    print:("indiece no existe") 
