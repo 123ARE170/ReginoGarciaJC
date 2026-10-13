@@ -8,7 +8,7 @@ import array as arr
 # f: Numero decimal 
 # d: Numero decimal doble 
 # u: Crácteres unicode
-my_array = arr.array('i',[200,20,2.12,22,32,42,52,62,72,82,92]) 
+my_array = arr.array('i',[200,20,2.12,22,32,82,52,62,72,82,92]) 
 #interaccion automatica 
 # for num in my_array: 
 #     print(num)
@@ -20,8 +20,14 @@ my_array = arr.array('i',[200,20,2.12,22,32,42,52,62,72,82,92])
 #length 
 print(len(my_array))
 #interaccion por indices 
-for i in range(len(my_array)):
-    #print(f"Elemento {i+1}: {my_array[i]}")
-    if my_array[1] % 2 == 0: 
-        print(f"Elemento Num {i+1}:{my_array[i]}")
+# for i in range(len(my_array)):
+#     #print(f"Elemento {i+1}: {my_array[i]}")
+#     if my_array[1] % 2 == 0: 
+#         print(f"Elemento Num {i+1}:{my_array[i]}")
         
+#busqueda de elementos
+num_to_search = 42
+try: 
+    print(f"Locatizadom {num_to_search}: {my_array.index (num_to_search)}")
+except: 
+    print("NUMERO NO ENCONTRADO WUE")
