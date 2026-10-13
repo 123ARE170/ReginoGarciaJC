@@ -17,7 +17,7 @@ my_array = arr.array('i',[200,20,2.12,22,32,42,52,62,72,82,92])
 # print(my_array[1]) # segubdo elemento 
 # print(my_array[1]) # tercer elemento 
 #tamño de arreglo 
-#length
+#length 
 print(len(my_array))
 #interaccion por indices 
 for i in range(len(my_array)):
