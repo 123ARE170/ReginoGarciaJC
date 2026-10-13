@@ -10,7 +10,7 @@ import time
 
 #crear varibales 
 #el problema 
-n = 5000
+n = 100 
 limit = 500
 the_sum = 0 
 
