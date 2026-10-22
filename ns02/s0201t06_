@@ -1,0 +1,16 @@
+from array import array as arr
+3 # parametros de mi cadricula 
+row = 3 
+columns = 2 * row -1 
+# contruyendo el grid  2D
+matrix = []
+#Construyendo el grid 
+for row  in range(rows):
+ new_row = arr('i', [0] * columns)
+ matrix.append(new_row)
+# cvalidando la contruccion del grid 
+print(f"cantidad de filas: {len(matrix)}")
+print(f"cantidad de columnas: {len(matrix[0])}")
+for now in matrix: 
+ print(list(row))
+
