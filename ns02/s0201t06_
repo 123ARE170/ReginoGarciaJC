@@ -14,12 +14,12 @@ matrix.append(new_row)
 # cvalidando la contruccion del grid 
 print(f"cantidad de filas: {len(matrix)}")
 print(f"cantidad de columnas: {len(matrix[0])}")
-for now in matrix: 
- print(list(rows))
- #for row in matrix: 
- # print(list(row))
- # Calculando el centro de la primera fila 
- center = columns // 2 # se hace division entera 
+for row in matrix:
+    print(list(row))
+    #for row in matrix: 
+    # print(list(row))
+    # Calculando el centro de la primera fila 
+    center = columns // 2 # se hace division entera 
  #establecido el centro en 1 
 matrix[0][center] = 1 
 
@@ -36,11 +36,22 @@ for row in range(1,rows):
    left_upper_cell=matrix[row-1][col-1]
 
 if col < columns-1:
- right_upper_cell=matrix[row-1][col-1]
+ right_upper_cell=matrix[row-1][col+1]
  # fuardar el arreglo 
- if left_upper_cell != : 
- matrix[row][col] = 1
-else: 
- matrix[row][col] = 0
+ if left_upper_cell != right_upper_cell: 
+  matrix[row][col] = 1 
+ else: 
+  matrix[row][col] = 0 
 print()
 print_matrix()
+#funcion de motrar celda por cleda 
+def  draw_matrix(input_matrix, symbol="*"): 
+ for row in input_matrix: 
+  for cell in row: 
+   if cell == 1: 
+    print(symbol, end="")
+  else: 
+   print(" ", end="")
+print()
+
+
