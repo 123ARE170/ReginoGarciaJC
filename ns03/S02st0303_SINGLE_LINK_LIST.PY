@@ -79,5 +79,4 @@ def main():
 
  #evaluo el valor name __name__
 if __name__ == "__main__":
-   main()
-   
+     main()
